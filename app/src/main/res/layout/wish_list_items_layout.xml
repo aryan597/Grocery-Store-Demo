@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/order_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_20sdp"
+    android:background="@drawable/rounded_corner"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/product_image_layout"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/banana" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/product_image_layout"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Banana"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/product_image_layout"
+        app:layout_constraintTop_toTopOf="@+id/product_image_layout" />
+
+
+
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name"
+        android:layout_toEndOf="@+id/product_image_layout"
+        android:fontFamily="@font/poppins_regular"
+        android:text="1 $"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@+id/product_name"
+        app:layout_constraintTop_toBottomOf="@+id/product_name" />
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Add to Cart"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

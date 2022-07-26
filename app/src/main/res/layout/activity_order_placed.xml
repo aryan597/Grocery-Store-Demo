@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:text="Loading Details...!"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_hurray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/hurray" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_below="@+id/title"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/order_placed_animation"
+        app:lottie_speed="0.6" />
+
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animation"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="gone"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="Your order has been placed successfully and your order id is 36asdfb4\n\nThank you for shopping with us..!"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/back_to_home_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subtext"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="@color/my_statusbar_color"
+        android:background="@drawable/rounded_corner"
+        android:text="Continue Shopping"
+        android:textAllCaps="false"
+        android:textSize="16dp" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/text_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatTextView android:ellipsize="end" android:id="@+id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <nl.joery.animatedbottombar.BadgeView android:id="@+id/text_badge" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/icon_layout" android:paddingTop="8dp" android:paddingBottom="8dp" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+        <nl.joery.animatedbottombar.BadgeView android:layout_gravity="end" android:id="@+id/icon_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8dp" android:layout_marginBottom="-8dp" android:layout_toRightOf="@+id/icon_view" android:layout_above="@+id/icon_view" android:layout_marginStart="-8dp" android:layout_toEndOf="@+id/icon_view"/>
+    </RelativeLayout>
+</merge>

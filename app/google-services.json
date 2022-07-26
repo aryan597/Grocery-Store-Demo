@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "427276175905",
+    "project_id": "layaanawebingo",
+    "storage_bucket": "layaanawebingo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427276175905:android:6668771d7200e40102f160",
+        "android_client_info": {
+          "package_name": "com.grocery.layaana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427276175905-ntu4u18230su0bbjhjhuquk9m6uacj23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxZa9oJfW62a_00-G77x5gOEotErk7P2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427276175905-ntu4u18230su0bbjhjhuquk9m6uacj23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427276175905:android:99c2c35a5da723a902f160",
+        "android_client_info": {
+          "package_name": "com.webingo.layaana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427276175905-ntu4u18230su0bbjhjhuquk9m6uacj23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxZa9oJfW62a_00-G77x5gOEotErk7P2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "427276175905-ntu4u18230su0bbjhjhuquk9m6uacj23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

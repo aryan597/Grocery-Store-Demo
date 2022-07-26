@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/bottom_bar_layout"
+        android:background="@drawable/bottom_navigation_bg"
+        android:backgroundTint="#f4970e"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:elevation="2dp">
+        <nl.joery.animatedbottombar.AnimatedBottomBar
+            android:id="@+id/bottom_bar"
+            android:background="#f4970e"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:abb_indicatorAppearance="square"
+            app:abb_indicatorColor="@color/white"
+            app:abb_indicatorHeight="4dp"
+            app:abb_indicatorMargin="16dp"
+            app:abb_selectedIndex="0"
+            app:abb_selectedTabType="icon"
+            app:abb_tabColor="@color/white"
+            app:abb_tabColorSelected="@color/white"
+            app:abb_tabs="@menu/bottom_navigation"/>
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_above="@id/bottom_bar_layout"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/noInternet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/no_internet"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_imageAssetsFolder="images"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/NoInternetTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Internet..!"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="150dp"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/_10sdp" />
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>
